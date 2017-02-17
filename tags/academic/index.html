@@ -16,20 +16,20 @@
     
   
   
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/css/academicons.min.css">
+  <link rel="stylesheet" href="/~mbillah/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/~mbillah/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/~mbillah/css/academicons.min.css">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700|Merriweather|Roboto+Mono">
-  <link rel="stylesheet" href="/css/hugo-academic.css">
+  <link rel="stylesheet" href="/~mbillah/css/hugo-academic.css">
   
 
-  <link rel="alternate" href="https://example.com/index.xml" type="application/rss+xml" title="Academic">
-  <link rel="feed" href="https://example.com/index.xml" type="application/rss+xml" title="Academic">
+  <link rel="alternate" href="https://www.ece.ucr.edu/~mbillah/index.xml" type="application/rss+xml" title="Academic">
+  <link rel="feed" href="https://www.ece.ucr.edu/~mbillah/index.xml" type="application/rss+xml" title="Academic">
 
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/~mbillah/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/~mbillah/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://example.com/tags/academic/">
+  <link rel="canonical" href="https://www.ece.ucr.edu/~mbillah/tags/academic/">
 
   
 
@@ -50,7 +50,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Academic</a>
+      <a class="navbar-brand" href="/~mbillah/">Academic</a>
     </div>
 
     
@@ -63,7 +63,7 @@
         
 
         <li class="nav-item">
-          <a href="/#about">
+          <a href="/~mbillah/#about">
             
             <span>Home</span>
           </a>
@@ -75,7 +75,7 @@
         
 
         <li class="nav-item">
-          <a href="/#experience">
+          <a href="/~mbillah/#experience">
             
             <span>Experience</span>
           </a>
@@ -87,7 +87,7 @@
         
 
         <li class="nav-item">
-          <a href="/#research">
+          <a href="/~mbillah/#research">
             
             <span>Research</span>
           </a>
@@ -99,7 +99,7 @@
         
 
         <li class="nav-item">
-          <a href="/#publications">
+          <a href="/~mbillah/#publications">
             
             <span>Publications</span>
           </a>
@@ -111,7 +111,7 @@
         
 
         <li class="nav-item">
-          <a href="/#skills">
+          <a href="/~mbillah/#skills">
             
             <span>Skills</span>
           </a>
@@ -123,7 +123,7 @@
         
 
         <li class="nav-item">
-          <a href="/#teaching">
+          <a href="/~mbillah/#teaching">
             
             <span>Relevant Courseworks</span>
           </a>
@@ -135,7 +135,7 @@
         
 
         <li class="nav-item">
-          <a href="/#prof">
+          <a href="/~mbillah/#prof">
             
             <span>Professional Services</span>
           </a>
@@ -147,7 +147,7 @@
         
 
         <li class="nav-item">
-          <a href="/#contact">
+          <a href="/~mbillah/#contact">
             
             <span>Contact</span>
           </a>
@@ -164,7 +164,7 @@
 
 
 <div class="article-header">
-  <img src="/img//headers/bubbles-wide.jpg" class="article-banner" itemprop="image">
+  <img src="/~mbillah/img//headers/bubbles-wide.jpg" class="article-banner" itemprop="image">
   
 </div>
 
@@ -208,13 +208,33 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
-    <script src="/js/jquery-1.12.3.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/~mbillah/js/jquery-1.12.3.min.js"></script>
+    <script src="/~mbillah/js/bootstrap.min.js"></script>
+    <script src="/~mbillah/js/isotope.pkgd.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.1/imagesloaded.pkgd.min.js"></script>
-    <script src="/js/hugo-academic.js"></script>
+    <script src="/~mbillah/js/hugo-academic.js"></script>
     
 
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-92102496-1', 'auto');
+        ga('send', 'pageview');
+
+         
+        var links = document.querySelectorAll('a');
+        Array.prototype.map.call(links, function(item) {
+            if (item.host != document.location.host) {
+                item.addEventListener('click', function() {
+                    var action = item.getAttribute('data-action') || 'follow';
+                    ga('send', 'event', 'outbound', action, item.href);
+                });
+            }
+        });
+    </script>
     
 
     
